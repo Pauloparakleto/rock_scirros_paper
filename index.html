@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rock Scirros and paper</title>
+  </head>
+    <body>
+    <script>
+    alert('Welcome to Rock Paper or Scirros game!');
+    let option = ["rock", "paper", "scissors"];
+    let playChoice = prompt('Rock or Paper or Scirros?', '');
+    let computerChoice = option[Math.floor(Math.random() * option.length)];
+    if(playChoice == 'Rock' && computerChoice == 'rock' || playChoice == 'Paper' && computerChoice == 'paper' 
+    || playChoice == 'Scirros' && computerChoice == 'scirros'){
+        console.log('a tie');
+    } else if(playChoice == 'Rock' && computerChoice == 'scirros' || playChoice == 'Paper' && computerChoice == 'rock'
+    || playChoice == 'Scirros' && computerChoice == 'paper'){
+        console.log('You win.');
+    } else{
+        console.log('You lose')
+    }
+    </script>
+</body>
+</html>
