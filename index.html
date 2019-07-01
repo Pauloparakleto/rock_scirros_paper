@@ -7,6 +7,24 @@
     <body>
     <script>
     alert('Welcome to Rock Paper or Scirros game!');
+<<<<<<< HEAD
+    
+    let option = ["rock", "paper", "scissors"];
+    let playChoice = prompt('Rock or Paper or Scirros?', '');
+    let computerChoice = option[Math.floor(Math.random() * option.length)];
+
+    playChoice = playChoice.toLowerCase();
+    playChoice = playChoice.charAt(0).toUpperCase() + playChoice.slice(1);
+    
+    if(playChoice == 'Rock' && computerChoice == 'rock' || playChoice == 'Paper' && computerChoice == 'paper' 
+    || playChoice == 'Scirros' && computerChoice == 'scirros'){
+        console.log('A tie. ' + playChoice + ' is equal to ' + computerChoice + '.');
+    } else if(playChoice == 'Rock' && computerChoice == 'scirros' || playChoice == 'Paper' && computerChoice == 'rock'
+    || playChoice == 'Scirros' && computerChoice == 'paper'){
+        console.log('You win. ' + playChoice + ' beats ' + computerChoice + '.');
+    } else{
+        console.log('You lose. ' + playChoice + ' loses for ' + computerChoice + '.')
+=======
     let option = ["rock", "paper", "scissors"];
     let playChoice = prompt('Rock or Paper or Scirros?', '');
     let computerChoice = option[Math.floor(Math.random() * option.length)];
@@ -18,6 +36,7 @@
         console.log('You win.');
     } else{
         console.log('You lose')
+>>>>>>> b1131d7fb4bbbeb3c7dc3f1463bff831dfb75ca2
     }
     </script>
 </body>
